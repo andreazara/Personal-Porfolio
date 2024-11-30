@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Header Section */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 12%;
+    background: rgba(51, 51, 51, 0.8); /* Dark gray with transparency */
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 30px;
+    color: #FFFFFF; /* White */
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.logo:hover {
+    color: #888888; /* Lighter gray */
+    text-shadow: 0 0 25px #888888, 0 0 50px #888888;
+    transform: scale(1.1);
+}
+
+.logo span {
+    color: #888888; /* Lighter gray */
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #FFFFFF; /* White */
+    font-weight: 500;
+    margin: 0 20px;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #888888; /* Lighter gray */
+    border-bottom: 3px solid #888888; /* Lighter gray */
+}
+
+.contact {
+    padding: 10px 28px;
+    background-color: #333333; /* Dark gray */
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.contact:hover {
+    background-color: #888888; /* Lighter gray */
+    color: black;
+    box-shadow: 0 0 25px #888888; /* Lighter gray */
+}
+
+/* Home Section */
+.home {
+    width: 100%;
+    min-height: 100vh;
+    background: #F4F4F4; /* Soft light gray */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8em;
+    padding: 30px 12%;
+    margin-top: 80px; /* Offset for fixed header */
+}
+
+.home-content h3 {
+    font-size: 42px;
+    color: #888888; /* Lighter gray */
+}
+
+.home-content h1 {
+    font-size: 62px;
+    line-height: 1.2;
+    color: #333333; /* Dark gray */
+}
+
+.home-content p {
+    font-size: 18px;
+    margin: 25px 0 30px;
+    color: #555555; /* Medium gray */
+}
+
+.img-box img {
+    border-radius: 50%;
+    width: 550px;
+}
+
+/* Portfolio Section */
+.portfolio {
+    padding: 50px 20px;
+    background-color: #F4F4F4; /* Soft light gray */
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.5em;
+    color: #333333; /* Dark gray */
+    margin-bottom: 10px;
+}
+
+.section-title span {
+    color: #333333; /* Lighter gray */
+}
+
+.section-description {
+    font-size: 1.1em;
+    color: #555555; /* Medium gray */
+    margin-bottom: 30px;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.portfolio-item {
+    background-color: #FFFFFF; /* White */
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.portfolio-info {
+    padding: 15px;
+}
+
+.portfolio-info h3 {
+    font-size: 1.2em;
+    color: #333333; /* Dark gray */
+    margin-bottom: 10px;
+}
+
+.portfolio-info p {
+    font-size: 1em;
+    color: #555555; /* Medium gray */
+}
+
+.portfolio-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact Form Section */
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .contact-section {
+    padding: 50px 20px;
+    background-color: #f0f0f0; /* Light gray background */
+    text-align: center;
+}
+
+.contact-section h2 {
+    color: #333; /* Dark gray */
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+}
+
+.contact-card {
+    background-color: #fff; /* White card background */
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.contact-card h4 {
+    font-size: 1.5em;
+    color: #333; /* Dark gray text */
+    margin-bottom: 15px;
+}
+
+.contact-info {
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.contact-info img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.contact-info strong {
+    font-size: 1em;
+    color: #666; /* Medium gray text */
+}
+
+.social-link {
+    color: #666; /* Subtle blue for link */
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-link:hover {
+    color: #ffcc00; /* Highlighted yellow on hover */
+}

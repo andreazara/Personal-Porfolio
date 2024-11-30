@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"><span>Andrea</span> Zara</a>
+    
+        <nav class="navbar">
+            <a href="#" class="active">About Me</a>
+            <a href="#">Portfolio</a>
+        </nav>
+    
+        <a href="#" class="contact">Contact Me</a>
+    </header>
+    <section class="home">
+        <div class="home-content">
+            <h3>Hi There!</h3>
+            <h1>I'm <span>Andrea</span> Zara</h1>
+            <p>I create stunning websites to elevate your business online.</p>
+            <button class="btn">Hire Me</button>
+        </div>
+        <div class="img-box">
+            <img src="pic.png" alt="Andrea Zara">
+        </div>
+    </section>
+
+<!-- Portfolio Section -->
+<section id="portfolio" class="portfolio">
+    <div class="container">
+        <h2 class="section-title"><span>Portfolio</span></h2>
+        <p class="section-description">Explore some of the projects and work I've done.</p>
+        
+        <div class="portfolio-grid">
+            <!-- Portfolio Item 1 -->
+            <div class="portfolio-item" onclick="openModal('high.png')">
+                <img src="high.png" alt="High Fidelity Project">
+                <div class="portfolio-info">
+                    <h3>High Fidelity</h3>
+                    <p>A detailed and polished design with realistic visuals, including color schemes, typography, and interactions, providing a near-final representation of the user interface.</p>
+                </div>
+            </div>
+        
+            <!-- Portfolio Item 2 -->
+            <div class="portfolio-item" onclick="openModal('low.png')">
+                <img src="low.png" alt="Low Fidelity Project">
+                <div class="portfolio-info">
+                    <h3>Low Fidelity</h3>
+                    <p>A basic wireframe design that focuses on layout and structure without detailed visual elements, providing a clear overview of user flow and functionality.</p>
+                </div>
+            </div>
+
+            <!-- Portfolio Item 3 -->
+            <div class="portfolio-item" onclick="openModal('high.png')">
+                <img src="" alt="">
+                <div class="portfolio-info">
+                    <h3>Title</h3>
+                    <p>A brief description of this amazing project.</p>
+                </div>
+            </div>
+
+            <!-- Portfolio Item 4 -->
+            <div class="portfolio-item" onclick="openModal('low.png')">
+                <img src="" alt="Low Fidelity Project">
+                <div class="portfolio-info">
+                    <h3>Title</h3>
+                    <p>A brief description of this amazing project.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Structure (only one) -->
+        <div id="imageModal" class="modal" style="display: none;">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="modalImage" alt="Expanded Portfolio Image">
+        </div>
+    </div>
+</section>
+
+<!-- JavaScript (only one set needed) -->
+<script>
+    function openModal(imageSrc) {
+        const modal = document.getElementById("imageModal");
+        const modalImage = document.getElementById("modalImage");
+        modal.style.display = "block";
+        modalImage.src = imageSrc;
+    }
+
+    function closeModal() {
+        const modal = document.getElementById("imageModal");
+        modal.style.display = "none";
+    }
+</script>
+
+            
+        
+        </div>
+    </div>
+</section>
+   <!-- Contact Section -->
+ <!-- Contact Section -->
+ <div class="contact-section">
+    <h2 class="text-center mb-4">Contacts</h2>
+  
+    <div class="contact-container">
+      <div class="contact-card">
+        <h4>Andrea Zara</h4>
+        <div class="contact-info">
+          <img src="call.jpg" alt="Contact Icon" width="25" height="25"> 
+          <strong>09051415791</strong>
+        </div>
+        <div class="contact-info">
+          <img src="gmail.jpg" alt="Email Icon" width="25" height="25"> 
+          <strong>zaraandrea57@gmail.com</strong>
+        </div>
+        <div class="contact-info">
+          <a href="https://www.facebook.com/andrea.zara.07/" target="_blank" class="social-link">
+            <img src="facebook.png" alt="Facebook Icon" width="25" height="25"> Andrea Zara
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+</body>
+</html>
